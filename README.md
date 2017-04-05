@@ -1,6 +1,8 @@
 ## promoter
 
-This is a shim around @google-cloud/pubsub to allow you to use it even when you're not in a google cloud environment, and to let you use your own mock function for publishes in your tests
+This is a shim around @google-cloud/pubsub to allow you to use it even when you're not in a google cloud environment, and to let you use your own mock function for publishes in your tests.
+
+If `GCLOUD_PROJECT` is exported to your environment, you get a real pubsub interface, otherwise you get a mocked one - which is super minimal right now.
 
 ### usage
 
