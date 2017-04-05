@@ -25,7 +25,7 @@ const Promoter = require('promoter')();
 
 const publish = (msg) => {
   
-  return Promoter.topic('someTopic).get().then(([topic]) => {
+  return Promoter.topic('someTopic').get().then(([topic]) => {
 
     return topic.publish(msg);
   });
